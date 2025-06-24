@@ -1,7 +1,7 @@
 -- Klythe is a non-distracting NVIM configuration
 
-require('mappings')
-require('keymaps')
+require 'mappings'
+require 'keymaps'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -16,5 +16,5 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
-require('klycolor')
-require('plugins')
+require 'klycolor'
+require 'plugins'

@@ -11,6 +11,10 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>')
 vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
   callback = function()
-    vim.hl.on_yank()
+    vim.highlight.on_yank()
   end,
 })
+
+-- Telescope
+vim.keymap.set('n', '<C-o>', '<cmd>Telescope find_files<CR>')
+vim.keymap.set('n', '<leader><leader>', '<cmd>Telescope live_grep<CR>')
