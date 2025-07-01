@@ -18,7 +18,7 @@ vim.o.ai = true
 vim.o.bri = true
 
 -- Clipboard
-vim.o.cd = 'unnamedplus'
+vim.o.cb = 'unnamedplus'
 
 -- Background
 vim.o.bg = 'light'
