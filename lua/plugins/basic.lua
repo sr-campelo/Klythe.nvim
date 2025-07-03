@@ -18,6 +18,12 @@ return {
     ---@module 'ibl'
     ---@type ibl.config
     opts = {},
+  },
+  {
+    'rebelot/kanagawa.nvim',
+    config = function()
+      vim.cmd('colorscheme kanagawa-lotus')
+    end,
   }
 }
 

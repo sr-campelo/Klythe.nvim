@@ -16,5 +16,4 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
-require 'klycolor'
 require 'plugins'
