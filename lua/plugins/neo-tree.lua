@@ -13,25 +13,15 @@ return {
     { '//', ':Neotree reveal<CR>', silent = true }
   },
   opts = {
+    close_if_last_window = true,
     filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+      },
       window = {
         mappings = {
           ['//'] = 'close_window',
         },
-      },
-      hide_dotfiles = false,
-      hide_gitignored = false,
-    },
-  },
-  default_component_configs = {
-    git_status = {
-      symbols = {
-        added     = "",
-        deleted   = "",
-        modified  = "",
-        renamed   = "➜",
-        untracked = "",
-        ignored   = "◌",
       },
     },
   },

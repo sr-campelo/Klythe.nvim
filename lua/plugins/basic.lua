@@ -1,16 +1,8 @@
 return {
   {
-    'windwp/nvim-autopairs',
-    event = 'InsertEnter',
-    config = function()
-      require('nvim-autopairs').setup({
-        enable_check_bracket_line = false,
-      })
-      local Rule = require('nvim-autopairs.rule')
-      require('nvim-autopairs').add_rules({
-        Rule('<', '>', { 'html', 'javascriptreact', 'typescriptreact', 'lua', 'rust' })
-      })
-    end,
+    'echasnovski/mini.pairs',
+    version = '*',
+    opts = {},
   },
   {
     'lukas-reineke/indent-blankline.nvim',
@@ -20,10 +12,9 @@ return {
     opts = {},
   },
   {
-    'rebelot/kanagawa.nvim',
-    config = function()
-      vim.cmd('colorscheme kanagawa-lotus')
-    end,
-  }
+    'echasnovski/mini.statusline',
+    version = '*',
+    opts = {},
+  },
 }
 
