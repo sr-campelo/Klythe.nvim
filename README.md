@@ -9,6 +9,8 @@ Main plugins:
 - [X] neo-tree
 - [X] treesitter
 - [X] fzflua
+- [ ] lspconfig and mason
+- [ ] blink
 
 Colorscheme:
 - [X] kanagawa
