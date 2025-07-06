@@ -3,15 +3,16 @@ Klythe is Rubén Campelo's working/studying system. It tries to be minimalistic,
 It's based on [lazy.nvim](https://github.com/folke/lazy.nvim) and implements the best practices to enhance speed and performance.
 
 Main plugins:
-- [ ] mini.pairs and mini.statusline
-- [ ] indent-blankline.nvim
-- [ ] gitsigns
-- [ ] telescope
-- [ ] neo-tree
-- [ ] treesitter
+- [X] mini.pairs and mini.statusline
+- [X] indent-blankline.nvim
+- [X] gitsigns
+- [X] neo-tree
+- [X] treesitter
+- [X] fzflua
 
 Colorscheme:
-- [ ] Kanagawa
+- [X] kanagawa
 
 Other:
 - [ ] 
+

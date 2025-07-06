@@ -15,12 +15,17 @@ return {
   opts = {
     close_if_last_window = true,
     filesystem = {
-      filtered_items = {
---        hide_dotfiles = false,
-      },
       window = {
         mappings = {
           ['//'] = 'close_window',
+        },
+      },
+    },
+    default_component_configs = {
+      git_status = {
+        symbols = {
+          modified = '+',
+          unstaged = '',
         },
       },
     },
