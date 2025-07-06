@@ -1,9 +1,20 @@
 # Klythe.nvim
-My personal non-distracting neovim configuration.
+Klythe is Rubén Campelo's working/studying system. It tries to be minimalistic, but always searching the best performance.
+It's based on [lazy.nvim](https://github.com/folke/lazy.nvim) and implements the best practices to enhance speed and performance.
 
-Includes:
-- Git signs
-- Neo-tree
-- Autopairs
-- Indent line
-- Telescope
+Main plugins:
+- [X] mini.pairs and mini.statusline
+- [X] indent-blankline.nvim
+- [X] gitsigns
+- [X] neo-tree
+- [X] treesitter
+- [X] fzflua
+- [ ] lspconfig and mason
+- [ ] blink
+
+Colorscheme:
+- [X] kanagawa
+
+Other:
+- [ ] 
+
