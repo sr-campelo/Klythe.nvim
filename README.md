@@ -9,12 +9,13 @@ Main plugins:
 - [X] neo-tree
 - [X] treesitter
 - [X] fzflua
-- [ ] lspconfig and mason
-- [ ] blink
+- [X] lspconfig
+- [X] blink
 
 Colorscheme:
 - [X] kanagawa
 
 Other:
-- [ ] 
+- [X] mason
 
+*Actual startup time: 54.6ms*
