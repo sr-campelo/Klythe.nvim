@@ -12,5 +12,7 @@ return {
       end
     },
   },
-  opts = {},
+  opts = {
+    fuzzy = { implementation = 'lua' }
+  },
 }
