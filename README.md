@@ -13,9 +13,10 @@ Main plugins:
 - [X] blink
 
 Colorscheme:
-- [X] kanagawa
+- [X] retrobox, kanawaga-lotus or peachpuff (activated on mappings)
+(easy switch with fzflua colorscheme)
 
 Other:
 - [X] mason
 
-*Actual startup time: 54.6ms*
+*Actual startup time: 65.18ms*
