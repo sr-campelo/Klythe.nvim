@@ -4,8 +4,6 @@ return {
     opts = {
       compile = true,
     },
-    config = function()
-      vim.cmd('colorscheme kanagawa-lotus')
-    end,
+    -- activate it on mappings
   },
 }

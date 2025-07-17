@@ -1,3 +1,6 @@
+-- Theme
+vim.cmd.colorscheme('retrobox') -- I also like kanawaga-lotus and peachpuff
+
 -- Options
 vim.o.nu = true -- numbers
 vim.o.rnu = true -- relativenumber
