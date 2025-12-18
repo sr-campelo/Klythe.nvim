@@ -11,9 +11,13 @@ return {
       },
     },
   },
-  config = function()
+  settings = {
+    ['lua_ls'] = {},
+  },
     -- Add here every lsp you want to work with
     -- Easy install with other/mason
-    require 'lspconfig'.lua_ls.setup {}
+  config = function()
+    vim.lsp.config['lua_ls'] = {}
+    vim.lsp.enable('lua_ls')
   end,
 }
