@@ -1,13 +1,25 @@
 return {
   'saghen/blink.cmp',
-  event = 'VimEnter',
-  version = '1.*',
   dependencies = {
-    'L3MON4D3/LuaSnip',
-    version = '2.*',
-    build = 'make install_jsregexp'
+    'rafamadriz/friendly-snippets'
   },
+  version = '1.*',
+  ---@module 'blink.cmp'
+  ---@type blink.cmp.Config
   opts = {
-    fuzzy = { implementation = 'lua' }
+    keymap = { preset = 'default' },
+
+    appearance = {
+      nerd_font_variant = 'mono'
+    },
+
+    completion = { documentation = { auto_show = false } },
+
+    sources = {
+      default = { 'lsp', 'path', 'snippets', 'buffer' },
+    },
+
+    fuzzy = { implementation = 'prefer_rust_with_warning' },
   },
+  opts_extended = { 'sources.default' },
 }
