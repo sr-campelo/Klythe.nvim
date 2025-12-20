@@ -31,3 +31,23 @@ hl('FloatBorder', { fg = palette.color_base_10, bg = palette.leather_color_alt }
 -- statusline
 hl('StatusLine', { fg = palette.color_base_20, bg = palette.leather_color })
 hl('StatusLineNC', { fg = palette.color_base_10, bg = palette.leather_color_alt })
+
+-- ===Lazy===
+hl('CurSearch', { fg = palette.color_base_20, bg = palette.leather_color_alt })
+hl('LazyButtonActive', { fg = palette.color_base_20, bg = palette.leather_color_alt })
+hl('LazyButton', { fg = palette.color_base_10 })
+hl('LazyReasonPlugin', { fg = palette.color_base_05 })
+hl('LazySpecial', { fg = palette.color_base_05 })
+hl('LazyCommit', { fg = palette.color_base_05 })
+hl('@markup.raw.markdown_inline', { fg = palette.color_base_05 })
+hl('LazyComment', { fg = palette.color_base_00 })
+hl('LazyDimmed', { fg = palette.color_base_00 })
+hl('LazyReasonImport', { fg = palette.color_base_00 })
+hl('LazyProp', { fg = palette.color_base_00 })
+
+-- ===NeoTree===
+hl('Directory', { fg = palette.bold_accent_ink })
+hl('Changed', { fg = palette.secondary_ink })
+hl('NeoTreeMessage', { fg = palette.color_base_30 })
+
+-- ===Markview===
