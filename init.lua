@@ -23,7 +23,8 @@ require 'setup.mappings'
 require('lazy').setup({
   spec = {
     { import = 'main' },
-    { import = 'colorscheme' }, -- Comment to disable
     { import = 'other' }, -- Comment to disable
   },
 })
+
+vim.cmd.colorscheme 'retro'
