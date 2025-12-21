@@ -37,6 +37,6 @@ map('n', '<leader>z', '<cmd>ZenMode<cr>')
 
 -- Typst-preview
 map('n', '<leader>tp', function()
-  require 'typst-preview'.preview()
+  require('typst-preview').preview()
 end
 )
