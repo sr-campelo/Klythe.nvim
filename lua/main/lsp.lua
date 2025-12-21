@@ -13,6 +13,7 @@ return {
   },
   settings = {
     ['lua_ls'] = {},
+    ['tinymist'] = {},
   },
     -- Add here every lsp you want to work with
     -- Easy install with other/mason
@@ -20,4 +21,8 @@ return {
     vim.lsp.config['lua_ls'] = {}
     vim.lsp.enable('lua_ls')
   end,
+  config = function ()
+    vim.lsp.config['tinymist'] = {}
+    vim.lsp.enable('tinymist')
+  end
 }
