@@ -33,10 +33,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 map('n', '<C-i>', 'magg=G`a')
 
 -- Zen
-map('n', '<leader>z', '<cmd>ZenMode<cr>')
+map('n', '<leader>z', '<cmd>ZenMode<CR>')
 
 -- Typst-preview
-map('n', '<leader>tp', function()
-  require('typst-preview').preview()
-end
-)
+map('n', '<leader>tp','<cmd>TypstPreview<CR>')
