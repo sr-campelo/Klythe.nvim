@@ -32,8 +32,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- Autoindenting
 map('n', '<C-i>', 'magg=G`a')
 
--- Zen
-map('n', '<leader>z', '<cmd>ZenMode<CR>')
-
--- Typst-preview
-map('n', '<leader>tp','<cmd>TypstPreview<CR>')
