@@ -32,3 +32,5 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- Autoindenting
 map('n', '<C-i>', 'magg=G`a')
 
+-- .md references
+map('n', '<leader>r', '<cmd>lua vim.lsp.buf.references()<CR>')
