@@ -66,6 +66,8 @@ hl('@markup.heading.5.markdown', { fg = palette.leather_color, bold = true })
 hl('@markup.heading.6.markdown', { fg = palette.leather_color, bold = true })
 hl('MarkviewInlineCode', { fg = palette.secondary_ink, bg= palette.color_base_10 })
 hl('@punctuation.special.markdown', { fg = palette.secondary_ink })
+hl('@markup.link.label.markdown_inline', { fg = palette.leather_color, underline = true })
+hl('@markup.link.url.markdown_inline', { fg = palette.leather_color, underline = true })
 
 -- ===Zen===
 hl('ZenBg', { bg = palette.leather_color })
