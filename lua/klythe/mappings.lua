@@ -16,12 +16,16 @@ opt.lcs = 'trail:·' -- add dots to spaces at the end of the line
 -- Clipboard
 opt.cb = 'unnamedplus' -- upgrade clipboard
 
+-- Autocomplete
+opt.ac = true --autocomplete
+opt.cot = 'menu,menuone,noselect,nearest'
+
 -- Background
 opt.bg = 'light' -- light background
 opt.cul = true -- cursorline highlight
 
 -- Showmode
-opt.smd = false --disable last line (mini.statusline)
+opt.stl = '[%n] %<%f %h%w%m%r%=%-14.(%l,%c%V%) %P' --statusline
 
 -- Quality of life
 opt.cf = true -- confirm save before :q

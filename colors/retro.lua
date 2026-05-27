@@ -19,7 +19,7 @@ hl('LineNr', { fg = palette.leather_color_alt, bg = palette.color_base_00 })
 hl('CursorLine', { bg = palette.color_base_10 })
 hl('CursorLineNr', { fg = palette.leather_color, bg = palette.color_base_00, bold = true })
 
--- coments and syntax
+-- comments and syntax
 hl('Comment', { fg = palette.secondary_ink, italic = true })
 hl('String', { fg = palette.italic_accent_ink })
 hl('Keyword', { fg = palette.bold_accent_ink, bold = true })
@@ -71,3 +71,6 @@ hl('@markup.link.url.markdown_inline', { fg = palette.leather_color, underline =
 
 -- ===Zen===
 hl('ZenBg', { bg = palette.leather_color })
+
+-- ===Indentation lines===
+hl('IblIndent', {fg = palette.leather_color})
