@@ -18,7 +18,10 @@ opt.cb = 'unnamedplus' -- upgrade clipboard
 
 -- Autocomplete
 opt.ac = true --autocomplete
+opt.cpt = '.,o,w,b' --complete
 opt.cot = 'menu,menuone,noselect,nearest'
+opt.ph = 5
+opt.pmw = 400
 
 -- Background
 opt.bg = 'light' -- light background
@@ -42,3 +45,23 @@ opt.ut = 250 -- updatetime
 -- History
 opt.udf = true -- save history
 opt.history = 100 -- how much operations save
+
+-- Highlight when copying text
+vim.api.nvim_create_autocmd('TextYankPost', {
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})
+
+-- LspAttach
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(ev)
+    local client = vim.lsp.get_client_by_id(ev.data.client_id)
+    if client and client:supports_method("textDocument/completion") then
+      vim.lsp.completion.enable(true, client.id, ev.buf, {
+        autotrigger = true,
+      })
+    end
+  end,
+})

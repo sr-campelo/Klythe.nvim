@@ -21,14 +21,6 @@ map('n', '<C-Down>', '<cmd>resize -2<CR>')
 map('n', '<C-Right>', '<cmd>vertical resize -2<CR>')
 map('n', '<C-Left>', '<cmd>vertical resize +2<CR>')
 
--- Highlight when copying text
-vim.api.nvim_create_autocmd('TextYankPost', {
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-})
-
 -- Autoindenting
 map('n', '<C-i>', 'magg=G`a')
 
