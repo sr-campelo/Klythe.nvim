@@ -1,6 +1,3 @@
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = true
-
 -- Lua
 vim.lsp.config('lua_ls', {
   cmd = { 'lua-language-server' },
@@ -17,14 +14,18 @@ vim.lsp.enable('stylua')
 -- Typst
 vim.lsp.config('tinymist', {
   cmd = { 'tinymist' },
-  filetypes = { 'typ' },
+  filetypes = { 'typst' },
 })
 vim.lsp.enable('tinymist')
 
 -- Markdown Oxide
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = true
+
 vim.lsp.config('markdown_oxide', {
   cmd = { 'markdown-oxide' },
-  filetypes = { '.obsidian', '.moxide.toml', '.git' },
+  filetypes = { 'markdown' },
+  root_markers = { '.obsidian', '.moxide.toml', '.git' },
   capabilities = capabilities,
 })
 vim.lsp.enable('markdown_oxide')
