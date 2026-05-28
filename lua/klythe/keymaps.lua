@@ -48,3 +48,12 @@ map('n', '<C-/>', '<cmd>FzfLua lgrep_curbuf<CR>')
 
 -- zen
 map('n', '<leader>z', '<cmd>ZenMode<CR>')
+
+-- LuaSnip
+map({ 'i', 's' }, '<C-k>', function()
+  local ls = require 'luasnip'
+  if ls.expand_or_jumpable() then
+    ls.expand_or_jump()
+  end
+end)
+

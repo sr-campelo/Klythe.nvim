@@ -13,6 +13,9 @@ require 'klythe.setup'
 -- Lsp config
 require 'klythe.lsp'
 
+-- Snippets
+require 'klythe.snippets'
+
 -- Colorscheme
 vim.cmd.colorscheme 'retro'
 
