@@ -15,6 +15,9 @@ ls.add_snippets('markdown', {
     t({ '', '', '## Bibliografía' }),
     t({ '', '' }),
     i(4),
+    t({ '', '', '## Tags' }),
+    t({ '', '' }),
+    i(4),
   }),
 },
 {
