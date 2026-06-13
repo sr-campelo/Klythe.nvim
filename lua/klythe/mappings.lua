@@ -19,7 +19,7 @@ opt.cb = 'unnamedplus' -- upgrade clipboard
 -- Autocomplete
 opt.ac = true --autocomplete
 opt.cpt = '.,o,w,b' --complete
-opt.cot = 'menu,menuone,noselect,nearest'
+opt.cot = 'menu,menuone,noselect,nearest,fuzzy'
 opt.ph = 5
 opt.pmw = 400
 
