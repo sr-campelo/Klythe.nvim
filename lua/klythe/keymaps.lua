@@ -49,3 +49,5 @@ map({ 'i', 's' }, '<C-k>', function()
   end
 end)
 
+-- TypstPreview
+map('n', '<leader>tp', '<cmd>TypstPreview<CR>')
